@@ -1,0 +1,38 @@
+﻿@model AspTask.Models.Instructor
+<h1>Create New Instructor</h1>
+
+<form asp-controller="Instructor" asp-action="Save" method="post" class="needs-validation" novalidate>
+    <div class="form-group mb-3">
+        <label for="id">ID:</label>
+        <input type="number" class="form-control" id="id" name="id" placeholder="Enter Instructor ID" required />
+        <div class="invalid-feedback">
+            Please provide a valid ID.
+        </div>
+        
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Instructor Name" required />
+        <div class="invalid-feedback">
+            Please provide a name.
+        </div>
+
+        
+
+
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="degree">Degree:</label>
+        <input type="text" class="form-control" id="degree" name="degree" placeholder="Enter Instructor Degree" required />
+        <div class="invalid-feedback">
+            Please provide a degree.
+        </div>
+        
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+

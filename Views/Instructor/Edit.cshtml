@@ -1,0 +1,12 @@
+﻿@model AspTask.Models.Instructor
+@{
+    var instructor = Model;
+}
+<h2>Edit View</h2>
+<form asp-controller="Instructor" asp-action="Edit" method="post">
+    <input type="hidden" value="@instructor.InsId" name="InsId" />
+    Name: <input type="text" value="@instructor.InsName" name="InsName" />
+    Degree: <input type="text" value="@instructor.InsDegree" name="InsDegree" />
+
+    <input type="submit" />
+</form>

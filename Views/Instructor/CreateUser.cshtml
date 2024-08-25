@@ -1,0 +1,54 @@
+﻿@model AspTask.Models.user
+
+<form asp-action="CreateUser" method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+        @Html.LabelFor(n => n.Id, new { @class = "form-label" })
+        @Html.TextBoxFor(n => n.Id, new { @class = "form-control", @placeholder = "Enter ID" })
+        @Html.ValidationMessageFor(n => n.Id, "", new { @class = "text-danger" })
+        
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(n => n.Name, new { @class = "form-label" })
+        @Html.TextBoxFor(n => n.Name, new { @class = "form-control", @placeholder = "Enter Name" })
+        @Html.ValidationMessageFor(n => n.Name, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(n => n.Job, new { @class = "form-label" })
+        @Html.TextBoxFor(n => n.Job, new { @class = "form-control", @placeholder = "Enter Job"})
+        @Html.ValidationMessageFor(n => n.Job, "", new { @class = "text-danger" })
+       
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(n => n.Email, new { @class = "form-label" })
+        @Html.TextBoxFor(n => n.Email, new { @class = "form-control", @type = "email", @placeholder = "Enter Email"})
+        @Html.ValidationMessageFor(n => n.Email, "", new { @class = "text-danger" })
+       
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(n => n.Age, new { @class = "form-label" })
+        @Html.TextBoxFor(n => n.Age, new { @class = "form-control", @placeholder = "Enter Age" })
+        @Html.ValidationMessageFor(n => n.Age, "", new { @class = "text-danger" })
+       
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(n => n.Phone, new { @class = "form-label" })
+        @Html.TextBoxFor(n => n.Phone, new { @class = "form-control", @placeholder = "Enter Phone Number" })
+        @Html.ValidationMessageFor(n => n.Phone, "", new { @class = "text-danger" })
+        
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+

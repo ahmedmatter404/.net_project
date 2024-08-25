@@ -1,0 +1,23 @@
+﻿body {
+    background-color: white;
+    text-align:center;
+    align-items:center;
+    display:flex;
+    margin-top:200px;
+    
+}
+h1{
+    color: saddlebrown;
+    font-size:25px;
+    font-weight:bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+    color: saddlebrown;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+span{
+    color:forestgreen;
+}
